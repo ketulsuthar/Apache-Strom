@@ -70,15 +70,17 @@
   
   The Website for download is: http://storm.apache.org/downloads.html (Kindly download the stable release for better performance)
   ```
-  $ wget http://redrockdigimark.com/apachemirror/storm/apache-storm-1.1.0/apache-storm-1.1.0.tar.gz
+  mkdir apache-storm
+  cd apache-storm
+  wget http://redrockdigimark.com/apachemirror/storm/apache-storm-1.1.0/apache-storm-1.1.0.tar.gz
   ```
   Here I am downloading Apache Storm 1.1.0
   ```
-  $ tar -xvf apache-storm-1.1.0.tar.gz -C /opt/ oolea/
+  tar -xvf apache-storm-1.1.0.tar.gz 
   ```
   Creating data Directory and editing YAML file for storm.
   ```
-  cd /opt/ oolea/apache-storm-1.1.0/
+  cd apache-storm-1.1.0
   mkdir data/
   nano conf/storm.yaml
   ```
@@ -86,7 +88,7 @@
   ```
   Storm.zookeeper.servers:
    - “127.0.0.1”
-  storm.local.dir: “/path/to/storm/data(any path)”
+  storm.local.dir: “/path/to/storm/data”
   nimbus.host: “127.0.0.1”
   supervisor.slots.ports:
    - 6700
@@ -100,7 +102,7 @@
   ```
   Add the below line to the end of the line.
   ```
-  Export STORM_HOME=/opt/ oolea/apache-storm-1.1.0
+  Export STORM_HOME=/path/apache-storm/apache-storm-1.1.0
   export PATH=”$PATH:$STORM_HOME/bin”
   ```
   Start Apache Storm Services by following Commands.
