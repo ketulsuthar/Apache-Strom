@@ -2,7 +2,7 @@
 
 ### Installation
 
-# 1. Install Java on your system, if you don’t have it already.
+## 1. Install Java on your system, if you don’t have it already.
     
    To install Java, first update the package index.
    ```
@@ -13,7 +13,7 @@
    ```
    java -version
    ```
-# 2. Install ZooKeeper framework.
+## 2. Install ZooKeeper framework.
   
   ZooKeeper stores all configuration and state data to disk. So, you will need to create a directory structure for ZooKeeper with the following command:
   ```
@@ -66,7 +66,7 @@
   Using config: /opt/zookeeper/bin/../conf/zoo.cfg
   Starting zookeeper ... STARTED
 
-# 3. Install Apache Storm framework.
+## 3. Install Apache Storm framework.
   
   The Website for download is: http://storm.apache.org/downloads.html (Kindly download the stable release for better performance)
   ```
